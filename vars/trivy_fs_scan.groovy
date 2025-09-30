@@ -1,3 +1,4 @@
 def call(){
-  sh "trivy fs ."
+  sh "trivy fs --format table -o fs-scan.html ."
+
 }
